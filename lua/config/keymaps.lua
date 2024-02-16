@@ -7,6 +7,10 @@ vim.keymap.set("i", "jk", "<Esc>", { desc = "Escape" })
 
 -- Normal Mode
 vim.keymap.set("n", ";", ":", { desc = "Alternative Command Mode" })
+vim.keymap.set("n", "<leader>y", '"+y', { desc = "Yank to Clipboard" })
+-- Visual Mode
+vim.keymap.set("v", "<leader>y", '"+y', { desc = "Yank to Clipboard" })
+
 ---- Buffers
 vim.keymap.del("n", "<S-h>")
 vim.keymap.del("n", "<S-l>")
